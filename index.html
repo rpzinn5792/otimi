@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drake Otimizações 🚀</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+/* LOGIN */
+#login {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.login-box {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.login-box input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* CONTEÚDO */
+h1 {
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #3b82f6;
+}
+
+.download {
+    display: inline-block;
+    margin-top: 10px;
+    background: #3b82f6;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.download:hover {
+    background: #2563eb;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login">
+  <div class="login-box">
+    <h2>Login 🔐</h2>
+    <input type="text" id="user" placeholder="Usuário"><br>
+    <input type="password" id="pass" placeholder="Senha"><br>
+    <button onclick="logar()">Entrar</button>
+  </div>
+</div>
+
+<h1>🚀 Drake Otimizações</h1>
+
+<div class="container">
+
+<div class="card">
+<h2>🚀 OTIMIZAÇÃO</h2>
+<p>Melhora FPS, reduz travamentos e otimiza CPU.</p>
+<a class="download" href="https://www.mediafire.com/file/p7wfd3ty56d4nsc/Otimização+drake.zip/file" target="_blank">Download</a>
+</div>
+
+<div class="card">
+<h2>🧹 ANTI VÍRUS</h2>
+<p>Proteção contra arquivos maliciosos.</p>
+<a class="download" href="https://www.bitdefender.com/pt-br/consumer/free-antivirus" target="_blank">Download</a>
+</div>
+
+<div class="card">
+<h2>🎮 XENO</h2>
+<p>AINDA EM ATUALIZAÇÃO...</p>
+<a class="download" href="#" onclick="alert('Ainda não disponível')">Em breve</a>
+</div>
+
+<div class="card">
+<h2>💻 ANYDESK</h2>
+<p>Suporte remoto com ajuda do Drake.</p>
+<a class="download" href="https://anydesk.com/pt/downloads/windows" target="_blank">Download</a>
+</div>
+
+</div>
+
+<script>
+function logar() {
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
+
+    if (u === "drake" && p === "sx") {
+        document.getElementById("login").style.display = "none";
+    } else {
+        alert("Usuário ou senha incorretos!");
+    }
+}
+</script>
+
+</body>
+</html>
